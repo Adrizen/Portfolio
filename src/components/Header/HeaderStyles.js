@@ -19,8 +19,14 @@ export const Container = styled.div`
 `;
 
 export const Span = styled.span`
-font-size: 4rem;
-padding-bottom: 0rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  margin-left: -2rem;
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 `;
 
 export const Div1 = styled.div`
@@ -53,7 +59,7 @@ export const Div3 = styled.div`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;

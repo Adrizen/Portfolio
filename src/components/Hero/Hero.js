@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, Emoji } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -8,12 +8,18 @@ const Hero = () => (
   <Section>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to my personal portfolio!
+        👋 Hi! <br />
+        Welcome to my portfolio
       </SectionTitle>
       <SectionText>
-        This is the section text btw.
+        Thanks for stepping by, scroll down to know more about me. <br />
+        You can also download my CV with the button below.
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}> Download CV? </Button>
+      <a href='files/GuillermoAndresPereyra-CV.pdf' target="_blank">
+        <Button>
+          Download CV
+        </Button>
+      </a>
     </LeftSection>
   </Section>
 );

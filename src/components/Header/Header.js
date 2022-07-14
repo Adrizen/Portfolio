@@ -10,7 +10,7 @@ const Header = () => (
     <Div1>
       <Link href='/' >
         <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-          <DiTerminalBadge size="7rem" /><Span>Portfolio</Span>
+          <DiTerminalBadge style={{ animation: 'blinker 1s step-start infinite' }} size="7rem" /><Span>Adrizen</Span>
         </a>
       </Link>
     </Div1>
@@ -18,7 +18,7 @@ const Header = () => (
     <Div2>
       <li>
         <Link href="#projects">
-          <NavLink>
+          <NavLink style={{ alignItems: 'center' }} >
             Projects
           </NavLink>
         </Link>
@@ -33,7 +33,7 @@ const Header = () => (
       <li>
         <Link href="#about">
           <NavLink>
-            About
+            About me
           </NavLink>
         </Link>
       </li>
@@ -41,11 +41,11 @@ const Header = () => (
 
     <Div3>
       <SocialIcons href="https://github.com/Adrizen" target="_blank">
-        <AiFillGithub size="3rem" />
+        <AiFillGithub size="4rem" />
       </SocialIcons>
 
       <SocialIcons href="https://www.linkedin.com/in/pereyra-guille-andres/" target="_blank">
-        <AiFillLinkedin size="3rem" />
+        <AiFillLinkedin size="4rem" />
       </SocialIcons>
 
     </Div3>
