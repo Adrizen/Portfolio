@@ -1,3 +1,5 @@
 ## Personal Portfolio
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+Made with React and Next.js
+
+[Checkout my portfolio](https://portfolio-adrizen.vercel.app/)
