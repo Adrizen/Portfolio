@@ -9,11 +9,12 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle main center>
         👋 Hi! <br />
-        Welcome to my portfolio
+        I'm Guillermo Andrés Pereyra <br />
+        A software developer
       </SectionTitle>
       <SectionText>
-        Thanks for stepping by, scroll down to know more about me. <br />
-        You can also download my CV with the button below.
+        I'm a Computer Science student, looking to get my first work experience in the IT area. <br />
+        Scroll down to know more about me. You can also download my CV with the button below.
       </SectionText>
       <a href='files/GuillermoAndresPereyra-CV.pdf' target="_blank">
         <Button>

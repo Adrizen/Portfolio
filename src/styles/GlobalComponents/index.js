@@ -40,8 +40,12 @@ export const SectionTitle = styled.h2`
   margin-bottom: 16px;
   padding: ${(props) => props.main ? '58px 0 16px' : '0'};
 
+  @media ${props => props.theme.breakpoints.lg}{
+    font-size: 45px;
+  }
+
   @media ${props => props.theme.breakpoints.md}{
-    font-size: ${(props) => props.main ? '56px' : '48px'};
+    font-size: ${(props) => props.main ? '40px' : '28px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};
     margin-bottom: 12px;
     padding: ${(props) => props.main ? '40px 0 12px' : '0'};
@@ -64,7 +68,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -82,7 +86,7 @@ export const SectionText = styled.p`
 
 export const SectionDivider = styled.div`
 
-  width: 64px;
+  width: 300px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
@@ -202,7 +206,7 @@ export const ButtonBack = styled.div`
     margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
   }
 `
-
+// COLOR PALETTE: https://coolors.co/d4afb9-d1cfe2-9cadce-7ec4cf-52b2cf
 export const ButtonFront = styled.button`
   border: none;
   border-radius: 50px;

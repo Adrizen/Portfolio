@@ -11,6 +11,10 @@ const data = [
 ];
 
 const Acomplishments = () => (
+  <div></div>
+);
+
+/*
   <Section>
     <SectionTitle>Personal Acomplishments</SectionTitle>
     <Boxes>
@@ -21,7 +25,6 @@ const Acomplishments = () => (
         </Box>
       ))}
     </Boxes>
-  </Section>
-);
+  </Section> */
 
 export default Acomplishments;

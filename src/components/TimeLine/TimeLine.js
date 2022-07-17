@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
@@ -7,6 +6,21 @@ import { TimeLineData } from '../../constants/constants';
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
+  return (
+    <Section id="about" >
+      <SectionTitle>About Me</SectionTitle>
+      <SectionText>
+      I like to set and achieve goals, especially those that are challenging and provide me with experience. I love music, fitness, motorsports, movies, series, video games and language learning. Interested in everything related to science and technology.
+      </SectionText>
+    </Section >
+  );
+};
+
+export default Timeline;
+
+/*
+  // Esto de abajo es para el carrousel con el timeline (que no estoy usando por ahora)
+
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
@@ -42,13 +56,7 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
-  return (
-    <Section id="about" >
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        Esta es la sección de texto.
-      </SectionText>
-      <CarouselContainer ref={carouselRef} onScroll={handleScroll} >
+<CarouselContainer ref={carouselRef} onScroll={handleScroll} >
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1} >
@@ -98,9 +106,5 @@ const Timeline = () => {
             <CarouselButtonDot active={activeItem} />
           </CarouselButton>))}
       </CarouselButtons>
-      <SectionDivider/>
-    </Section >
-  );
-};
 
-export default Timeline;
+*/

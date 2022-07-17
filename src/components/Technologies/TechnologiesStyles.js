@@ -1,4 +1,6 @@
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { AiFillCaretDown } from "react-icons/ai";
 
 export const ImageContainer = styled.div`
   text-align: center;
@@ -83,6 +85,7 @@ export const ListTitle = styled.h4`
 
 export const ListParagraph = styled.p`
   font-size: 18px;
+  text-align: justify;
   line-height: 30px;
   color: rgba(255, 255, 255, 0.75);
 
@@ -95,6 +98,29 @@ export const ListParagraph = styled.p`
     font-size: 14px;
     line-height: 22px;
   }
+`
+
+export const ReadMore = ({ children }) => {
+  const text = children;
+  const limit = children.indexOf('.');
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {  // Change the button to 'read more' or 'show less'
+    setIsReadMore(!isReadMore)
+  };
+  return (
+    <p>
+      {isReadMore ? text.slice(0, limit) : text}
+      <span onClick={toggleReadMore} style={{ color: '#4c84e6' }} >
+        {isReadMore ? "Read more" : " Show less"}
+      </span>
+    </p>
+  );
+}
+
+
+export const TechIcons = styled.div`
+display:  ${props => props.flex}; 
+flex-direction: ${props => props.flexDirection} ;
 `
 
 export const ListItem = styled.li`

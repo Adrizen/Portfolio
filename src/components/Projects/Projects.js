@@ -5,7 +5,7 @@ import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalCompon
 import { projects } from '../../constants/constants';
 
 const Projects = () => (
-  <Section>
+  <Section id="projects" style={{paddingBottom: '20px' }} >
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
@@ -19,7 +19,8 @@ const Projects = () => (
             </TitleContent>
             <CardInfo>{description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              <br/>
+              <TitleContent>Tags</TitleContent>
               <TagList>
                 {tags.map((tag, i) => (
                   <Tag key={i} >{tag}</Tag>

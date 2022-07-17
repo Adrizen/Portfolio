@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
 import { DiTerminalBadge } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
@@ -48,6 +48,9 @@ const Header = () => (
         <AiFillLinkedin size="4rem" />
       </SocialIcons>
 
+      <SocialIcons href="mailto:pereyraguillermoandres@gmail.com" >
+        <AiFillMail size="4rem" />
+      </SocialIcons>
     </Div3>
 
   </Container >

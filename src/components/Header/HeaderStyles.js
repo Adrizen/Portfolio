@@ -68,6 +68,15 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
+
+  @media ${(props) => props.theme.breakpoints.lg} {
+    font-size: 16px
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: 13px
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
   }
