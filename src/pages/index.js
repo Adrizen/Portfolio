@@ -7,6 +7,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Technologies />
       <Timeline />
       <Acomplishments />
+      <ScrollToTop/>
     </Layout>
   );
 };
